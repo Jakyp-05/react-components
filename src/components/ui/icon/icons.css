@@ -1,0 +1,25 @@
+.icon-wishlist {
+    stroke: red;
+    cursor: pointer;
+}
+
+.icon-wishlist:hover {
+    fill: green;
+    stroke: none;
+}
+
+.icon-wishlist:active {
+    fill: red;
+    stroke: red;
+}
+
+.call__block {
+    width: 46px;
+    height: 46px;
+    background-color: #FEC80B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    cursor: pointer;
+}
