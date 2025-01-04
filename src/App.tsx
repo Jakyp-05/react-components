@@ -1,6 +1,11 @@
+import IMAGES from "../public/images/index";
+
 import ButtonPr from "./components/ui/buttonPractice";
-import { CallIcon } from "./components/ui/icon/callIcon";
+import Image from "./components/ui/image/image";
+
 import { WishlistIcon } from "./components/ui/icon/wishlistIcon";
+import { CallIcon } from "./components/ui/icon/callIcon";
+import { FooterSvgSelector } from "./components/ui/icon/svgGeneratorSvgSelector";
 
 function App() {
   return (
@@ -47,6 +52,36 @@ function App() {
       >
         <WishlistIcon />
         <CallIcon />
+      </div>
+      <div>
+        <Image
+          src={IMAGES.imgOne}
+          alt="one"
+          className="image"
+          width={200}
+          height={200}
+        />
+        <Image
+          src={IMAGES.imgTwo}
+          alt="two"
+          className="image"
+          width={300}
+          height={200}
+        />
+        <Image
+          src={IMAGES.imgThree}
+          alt="three"
+          className="image"
+          width={200}
+          height={200}
+        />
+      </div>
+      <div>
+        <FooterSvgSelector id="facebook" />
+        <FooterSvgSelector id="twitter" />
+        <FooterSvgSelector id="google" />
+        <FooterSvgSelector id="instagram" />
+        <FooterSvgSelector id="you-tube" />
       </div>
     </div>
   );
