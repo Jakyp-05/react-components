@@ -98,6 +98,9 @@ const ButtonPractice = styled.button<IProps>`
       ? "20px"
       : "20px"};
   text-transform: uppercase;
+  &:hover {
+    background-color: ${(props) => (props.variant === "global" ? "#1064E5" : "")};
+  }
 `;
 
 const ButtonPr: React.FC<IProps> = ({
