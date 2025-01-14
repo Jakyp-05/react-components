@@ -3,6 +3,9 @@ import Chip from "../ui/chip/chip";
 import ButtonPr from "../ui/buttonPractice";
 import styled from "styled-components";
 import { Container } from "../ui/container/container";
+import ListRenderer from "../../utils/ListRenderer";
+
+import { MenuData } from "../../data/menu";
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -32,12 +35,10 @@ const Navbar = () => {
               <Chip textNumber="ПРО НАС" />
             </Link>
           </li>
-          <li className="menu__list">
-            <Link to="/prices">ЦЕНЫ</Link>
-          </li>
-          <li className="menu__list">
-            <Link to="/contact">КОНТАКТЫ</Link>
-          </li>
+          <ListRenderer
+            items={MenuData}
+            render={(item) => <p key={item.id}>{item.text}</p>}
+          />
         </Menu>
         <div>
           <ButtonPr size="sm" variant="second">
